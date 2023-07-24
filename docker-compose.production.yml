@@ -13,6 +13,8 @@ services:
   backend:
     image: linlinelle/taski_backend
     env_file: .env
+    depends_on:
+      - db
     volumes:
       - static:/backend_static
 
